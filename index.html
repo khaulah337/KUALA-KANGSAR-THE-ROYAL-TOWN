@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>index</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><img src="kanta.png"</i></button>
+          </form>
+        </div>
+        <img src="logo.png" align="left">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" href="history.html" style>About 
+          </button>
+          <div class="dropdown-content">
+          <a href="history.html">History</a>
+            <a href="community.html">Community</a>
+            <a href="folklore.html">Folklore</a>
+          </div>
+        </div>
+      <div class="dropdown">
+          <button class="dropbtn" href="destination.html">Their
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="destination.html">Destination</a>
+            <a href="foodies.html">Foodies</a>
+            <a href="education.html">Education</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+       
+       <a href="gallery.html">Gallery</a>
+       <a href="feedback.html">Feedbacks</a>
+      </div>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="a1.png" style="width:100%">
+      </div>
+        </div>
+      <div class="mySlides fade">
+        <img src="a2.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="a3.png" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+      <center><h1>#KUALAKANGSARCOMMUNITYWEBSITE</h1></font></center>
+      <pre></pre>
+      <center>
+      <video width="427" height="240" controls>
+        <source src="a4.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+      </video>
+      </center>
+      <br>  
+      <div class="column">
+         <div class="row">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="g10.jpg" alt="soap" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Interesting Places</h1>
+            <pre>GALERI SULTAN AZLAN SHAH</pre>
+            <p>Nice place to visit and see the Sultan Perak belonging</p>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="f6.png" alt="soap" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Foodies</h1>
+            <pre>BURGER BANJIR RIVER VIEW</pre>
+            <p>Scrumptios food with the great view</p>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="row">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="s4.jpeg" alt="soap" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Education</h1>
+            <pre>MALAY COLLEGE KUALA KANGSAR</pre>
+            <p>One of the prestige college in Malaysia that locate at the Kuala Kangsar</p>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="row">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="g14.jpg" alt="soap" style="width:300px;height:300px;">
+          </div>
+          <div class="flip-card-back">
+            <h1>Activity</h1>
+            <pre>RAJA AHMAD AKASIHAH</pre>
+            <p>Watch how Tengkolok being folded</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <center>
+      <form action="action_page.php">
+      <font color="F4F0E7">
+        <div class="container" style="background-color:#030303">
+          <h2>Subscribe to our Community Websites</h2>
+          <p>Lets subscribe! There are many information are waiting for you</p>
+        </div>
+      </font>
+      </center>
+      <center>
+        <div class="container" style="background-color:F4F0E7">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+      <br>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Confirm
+          </label>
+        </div>
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </center>
+      </form>
+      
+       <!-- hitwebcounter Code START -->
+      <center><a href="https://www.hitwebcounter.com" target="_blank">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=7833474&style=0025&nbdigits=5&type=page&initCount=0" 
+      title="Free Counter" Alt="web counter"   border="0" /></a></center>
+      
+      <div class="footer">
+        <p>KUALA KANGSAR THE ROYAL TOWN</p>
+        <p><a href="community.html">About</a></p>
+        <p><a href="feedback.html">Contact</a></p>
+      <br>
+      <font size="5%">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <br>
+        </font>
+    <br>
+      <h>COMMUNITY CHOOSEN DESTINATION</h>
+       <p><a href="destination.html">Destination</a></p>
+      <p>Help</p>
+        <p><a href="faq.html">FAQ</a></p>
+        <br>
+    &copy; Copyright 2022, Community Website. All right reserved
+      </footer>
+      
+    
+</body>
+</html>

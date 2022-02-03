@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="gallery.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+      
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+      
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+  </style> 
+</head>
+<body>
+  <div class="navbar">
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><img src="kanta.png"</i></button>
+          </form>
+        </div>
+        <img src="logo.png" align="left">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+        <button class="dropbtn" href="about.html" style>About 
+          </button>
+          <div class="dropdown-content">
+          <a href="history.html">History</a>
+            <a href="community.html">Community</a>
+            <a href="folklore.html">Folklore</a>
+          </div>
+        </div>
+      <div class="dropdown">
+          <button class="dropbtn" href="destination.html">Their
+            
+          </button>
+          <div class="dropdown-content">
+            <a href="destination.html">Destination</a>
+            <a href="foodies.html">Foodies</a>
+            <a href="education.html">Education</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+       
+       <a href="gallery.html">Gallery</a>
+       <a href="feedback.html">Feedbacks</a>
+      </div>
+     
+  <div class="header">
+        <h1>GALLERY OF KUALA KANGSAR COMMUNITY</h1>
+        <h2>This gallery contain random pictures of Kuala Kangsar community in doing their activity, their mesmerizing place,scrumptios food, and some pictures of minister during their visit to Kuala Kangsar town</h2>
+        <p style="text-align:center">These picture also contain the goodwill and the unity of the community </p>
+      </div>
+      
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="k1.jpg" style="width:100%">
+          <img src="g2.jpg" style="width:100%">
+          <img src="w6.png" style="width:100%">
+          <img src="f4.png" style="width:100%">
+          <img src="s3.jpg" style="width:100%">
+          <img src="w2.png" style="width:100%">
+          <img src="g18.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="g1.jpg" style="width:100%">
+          <img src="w4.png" style="width:100%">
+          <img src="g3.jpg" style="width:100%">
+          <img src="g9.jpg" style="width:100%">
+          <img src="g5.jpg" style="width:100%">
+          <img src="g11.jpg" style="width:100%">
+        </div>  
+        <div class="column">
+          <img src="g7.jpg" style="width:100%">
+          <img src="g8.jpg" style="width:100%">
+          <img src="g4.jpg" style="width:100%">
+          <img src="g10.jpg" style="width:100%">
+          <img src="g6.jpg" style="width:100%">
+          <img src="g12.jpg" style="width:100%">
+          <img src="g13.jpg" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="g14.jpg" style="width:100%">
+          <img src="g15.jpg" style="width:100%">
+          <img src="g16.jpg" style="width:100%">
+          <img src="g17.jpg" style="width:100%">
+          <img src="f6.png" style="width:100%">
+          <img src="g19.jpg" style="width:100%">
+        </div>
+      </div>
+      <embed src="br2.mp3"autoplay="false" hidden="true"></embed>
+      <br>
+         
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        
+        
+        <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script> 
+
+        <br>
+      <div class="footer">
+    &copy; Copyright 2022, Community Website. All right reserved 
+      </footer>  
+</body>
+</html>
